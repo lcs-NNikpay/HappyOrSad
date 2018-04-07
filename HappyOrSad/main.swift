@@ -41,10 +41,13 @@ for individualCharacter in input {
     }
     
 }
-if happyCount == 0 {
-    print("Unsure")
-} else if count > 0 {
+if happyCount > sadCount {
     print("Happy")
-} else if count < 0 {
+} else if sadCount == 0 && happyCount == 0 {
+    print("None")
+} else if happyCount < sadCount {
     print("Sad")
+} else if happyCount == sadCount {
+    print("Unsure")
 }
+
